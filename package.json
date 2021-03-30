@@ -1,0 +1,23 @@
+{
+  "name": "E2EPlaywrightJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisandre69/E2E-Playwright-JS.git"
+  },
+  "keywords": [],
+  "author": "Luis Abreu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisandre69/E2E-Playwright-JS/issues"
+  },
+  "homepage": "https://github.com/luisandre69/E2E-Playwright-JS#readme",
+  "dependencies": {
+    "playwright": "^1.10.0"
+  }
+}
