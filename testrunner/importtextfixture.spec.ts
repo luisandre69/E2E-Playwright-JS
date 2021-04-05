@@ -5,7 +5,7 @@ it("run the basic test of newwin", async ({ context }) => {
     await page.goto("https://www.neowin.net")
 })
 
-it("should be skipped for the firefox test", (test, { browserName }) => {
+it.only("should be skipped for the firefox test", (test, { browserName }) => {
     test.skip(browserName === "firefox", "Skip the test as it doesn't support isMobile option")
 }, async ({ page }) => {
     await page.goto("https://www.neowin.net")
