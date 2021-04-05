@@ -17,6 +17,7 @@ run all browsers with folio
 ```npx folio```
 
 ### param
+[folio](https://github.com/microsoft/folio#parameters)
 
 firefox: 
 ```npx folio ---param browserName=firefox```
