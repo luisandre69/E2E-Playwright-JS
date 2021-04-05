@@ -24,3 +24,7 @@ firefox:
 
 non headless
 ```npx folio ---param browserName=firefox headful```
+
+running 2 diferent versions
+
+```npx folio ./file.ts -p version=80 -p version=83
