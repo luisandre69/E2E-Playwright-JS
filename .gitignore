@@ -105,3 +105,4 @@ dist
 
 #ignore screenshot folder
 screenshot/
+temp/
