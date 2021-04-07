@@ -106,3 +106,8 @@ dist
 #ignore screenshot folder
 screenshot/
 temp/
+
+
+
+# trace .json file
+trace.json
