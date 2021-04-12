@@ -26,7 +26,7 @@ const { chromium } = require('playwright');
         console.log(`Page errors: "${pageError}`)
     })
 
-    await page.on('requestfailed', requestFailed => {
+    await page.on('requestfailed',  requestFailed => {
         console.log(`Request errors: "${requestFailed.url()}`)
     })
 
