@@ -16,7 +16,7 @@ const { chromium } = require("playwright");
   await page.click('button:has-text("Search")');
   //assert.equal(page.url(), "https://en.wikipedia.org/wiki/Cristiano_Ronaldo");
 
-  await page.screenshot({ path: 'screenshot/wiki.png' });
+  await page.screenshot({ path: "screenshot/wiki.png" });
   // ---------------------
   await browser.close();
 })();

@@ -1,39 +1,37 @@
-const { chromium, devices } = require('playwright');
-const iPhone = devices['iPhone 11 Pro Max'];
+const { chromium, devices } = require("playwright");
+const iPhone = devices["iPhone 11 Pro Max"];
 
 (async () => {
   const browser = await chromium.launch({
-    headless: false
+    headless: false,
   });
-
 
   const context2 = await browser.newContext();
 
-    // Open new page
-    const page2 = await context2.newPage();
+  // Open new page
+  const page2 = await context2.newPage();
 
-    await page2.goto("https://luisabreu.co.uk");
-    await page2.screenshot({ path: "screenshot/luis.png" });
-
+  await page2.goto("https://luisabreu.co.uk");
+  await page2.screenshot({ path: "screenshot/luis.png" });
 
   const context = await browser.newContext({
     ...iPhone,
-    permissions:['geolocation'],
-    geolocation: { latitude: 52.52, longitude: 13.39},
-    colorScheme: 'dark'
+    permissions: ["geolocation"],
+    geolocation: { latitude: 52.52, longitude: 13.39 },
+    colorScheme: "dark",
   });
-  
+
   // Open new page
   const page = await context.newPage();
 
   // Go to https://www.wikipedia.org/
-  await page.goto('https://www.wikipedia.org/');
+  await page.goto("https://www.wikipedia.org/");
 
   // Click input[name="search"]
   await page.click('input[name="search"]');
 
   // Fill input[name="search"]
-  await page.fill('input[name="search"]', 'Apple M1');
+  await page.fill('input[name="search"]', "Apple M1");
 
   // Click text="Apple M1"
   await page.click('text="Apple M1"');
@@ -42,7 +40,7 @@ const iPhone = devices['iPhone 11 Pro Max'];
   // Click text="Apple M1"
   await page.click('text="Apple M1"');
 
-  await page.screenshot({path: `screenshot/wiki2.png`})
+  await page.screenshot({ path: `screenshot/wiki2.png` });
 
   // Close page
   await page.close();

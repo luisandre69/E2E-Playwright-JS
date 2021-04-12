@@ -2,8 +2,7 @@ const { chromium } = require("playwright");
 
 (async () => {
   const browser = await chromium.launch({
-    executablePath:
-      "C:/Program Files/Google/Chrome/Application/chrome.exe",
+    executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe",
   });
 
   const context = await browser.newContext({});

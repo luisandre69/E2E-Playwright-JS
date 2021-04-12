@@ -13,8 +13,12 @@ const { chromium } = require("playwright");
   // Go to http://eaapp.somee.com/
   await page.goto("http://eaapp.somee.com/");
 
-  await browser.startTracing(page,{path:`trace.json`, screenshots:true, categories: ['devtools.timeline']});
-  
+  await browser.startTracing(page, {
+    path: `trace.json`,
+    screenshots: true,
+    categories: ["devtools.timeline"],
+  });
+
   // Click text="Login"
   await page.click('text="Login"');
   // assert.equal(page.url(), 'http://eaapp.somee.com/Account/Login');
