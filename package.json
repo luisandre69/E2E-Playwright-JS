@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/luisandre69/E2E-Playwright-JS#readme",
   "dependencies": {
-    "playwright": "^1.10.0",
-    "@playwright/test": "^0.1100.0"
+    "@playwright/test": "^0.1100.0",
+    "json-server": "^0.16.3",
+    "playwright": "^1.10.0"
   }
 }
