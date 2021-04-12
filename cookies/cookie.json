@@ -1,0 +1,42 @@
+[
+    {
+        "sameSite": "None",
+        "name": "b",
+        "value": "b",
+        "domain": "eaapp.somee.com",
+        "path": "/Account",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "sameSite": "None",
+        "name": "b",
+        "value": "b",
+        "domain": "eaapp.somee.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false
+    },
+    {
+        "sameSite": "None",
+        "name": "__RequestVerificationToken",
+        "value": "R3LTeYVe1oGJIshaYm8e06TK3yuYatYd-uF3Rl7Dxjz7LjM5WWg6nGM91JmYRXdv_vNc3LOYHaFWm2gvA0G8x6hTRbNsMlzPGGi7pzKIE1s1",
+        "domain": "eaapp.somee.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": false
+    },
+    {
+        "sameSite": "None",
+        "name": ".AspNet.ApplicationCookie",
+        "value": "cNCGqIHFLxsw4NTIp8IUapgGIUmBW_H3EhUoPHeb3BFME91y0ZBtKbKgB0B9fhZXL3p0lbQY_Poz-NfDjsngnbZk5BTCy9faSQ7mVv1bWD4BZcwxHXw418SQ7DdzUaXmuMu2NDlzFoCNDAqtx108t2WmfEm2EwgbvzuIRHYJtRHjxZZA8rE2byLigoytWloXI4IIOq1k2Aox1cTNH-_bR__vRQFFPHyAuncfyFJZBiazy6utbFcjf6rEIrbF6RcP5nhOAhaIX8QLnJqeQfAiWQusZCZ4jUeXOBG9w86g_7CZd7zMIg8lOe4Tj_i1r_pPMReBbthAdFFs-eseVW78zuwwdGhCvye1pE5pQWwp1ucXgNnQyd11Mee23M3CZUeeRdXc8T8AmmdlBwTdZs83v_F8sLyt1x7yc9bCHIByRVeixRDgt-Wyv7ysiD6TYYibckYSematAmBtFcVwJEDD8o74hlZFVtbvnSiw84Ks2oNpC-x0aFI1aGWFsrAI6T8Ou8yTwv-LE4rSA0-v-hOMOQ",
+        "domain": "eaapp.somee.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": false
+    }
+]
