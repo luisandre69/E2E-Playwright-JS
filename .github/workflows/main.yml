@@ -30,3 +30,10 @@ jobs:
 
       - name: Install dependencies and run tests
         run: npm install && npx folio
+     
+      - uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          name: test-atrtifacts
+          path: test-results
+
