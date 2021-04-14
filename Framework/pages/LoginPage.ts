@@ -1,4 +1,5 @@
 import { Page } from 'playwright'
+const { expect } = require('chai');
 
 class LoginPage {
 
@@ -14,9 +15,14 @@ class LoginPage {
 
     //All the UI elements of the Page
     lnkLogin = async () => this.Page.$('text="Login"');
+    pageTitle = async () => this.Page.title();
     txtUserName = async () => this.Page.$('input[name="UserName"]');
     txtPassword = async () => this.Page.$('input[name="Password"]');
     btnSubmit = async () => this.Page.$('input[type="submit"]');
+
+    public async validatePageTitle(title: string) {
+        await expect(this.pageTitle).to.contain(title);
+    }
 
 
     public async ClickLogin() {
